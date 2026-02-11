@@ -17,7 +17,7 @@ experiment_data['date'] = input_filename[-12:-4]
 experiment_data['atmospheric_pressure_hpa'] = np.round(experiment_data['atmospheric_pressure_hpa'])
 
 output_filename = input_filename.replace(["txt", "data"], ["csv", "results"])
-#output_filename = output_filename.replace("data", "results")
+output_filename = output_filename.replace("data", "results")
 
 # write dataframe to csv file
 experiment_data.to_csv(output_filename)
